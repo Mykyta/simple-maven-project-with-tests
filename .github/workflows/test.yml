@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: Mykyta/hello-world-javascript-action@master
+      uses: Mykyta/hello-world-javascript-action@v1
       with:
         who-to-greet: 'Nick'
     # Use the output from the `hello` step
