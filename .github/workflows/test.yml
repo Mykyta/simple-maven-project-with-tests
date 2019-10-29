@@ -1,16 +1,15 @@
-name: TestHello
+name: Wait
 
 on: [push]
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Wait
     steps:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Tell name
-        uses: Mykyta/hello-world-javascript-action@3
-        id: hello
+        uses: Mykyta/test-github-actions@releases/v1
         with:
-          name: 'Nick'
+          milliseconds: 1000
