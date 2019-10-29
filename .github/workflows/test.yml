@@ -6,7 +6,8 @@ jobs:
   file_presence:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: "Tell your name"
-        uses: Mykyta/hello-world-javascript-action@v3
+        uses: Mykyta/hello-world-javascript-action@3.0.1
         with:
           name: "Nick"
