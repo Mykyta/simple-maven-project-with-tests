@@ -10,4 +10,4 @@ jobs:
       - name: "Check file presence"
         uses: JJ/files-present-action@releases/v1
         with:
-          files: "pom.xml"
+          files: "pom.xml xxx"
