@@ -14,4 +14,4 @@ jobs:
         with:
           email: admin@dom.com
           password: admin123
-          directory: /out
+          directory: Jenkinsfile
