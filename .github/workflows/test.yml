@@ -3,11 +3,14 @@ name: TestHello
 on: [push]
 
 jobs:
-  file_presence:
+  hello_world_job:
     runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-      - uses: actions/checkout@v1
-      - name: Tell your name
-        uses: Mykyta/hello-world-javascript-action@3.0.1
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Tell name
+        uses: Mykyta/hello-world-javascript-action@3
+        id: hello
         with:
-          name: "Nick"
+          name: 'Nick'
