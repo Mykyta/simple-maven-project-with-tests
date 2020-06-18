@@ -24,6 +24,6 @@ jobs:
       uses: whelk-io/maven-settings-xml-action@v7
       with:
         servers: '[{ "id": "nexus-server", "username": "admin", "password": "BJzKWEv3KGw@Rj4r_!MT" }]'
-        mirrors: '[{ "id": "nexus-server", "mirrorOf": "external:*", "url": "https://06c0eb745b0b.ngrok.io" }]'
+        mirrors: '[{ "id": "nexus-server", "mirrorOf": "external:*", "url": "https://06c0eb745b0b.ngrok.io/repository/dev/" }]'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
