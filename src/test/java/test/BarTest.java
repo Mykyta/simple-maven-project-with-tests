@@ -24,32 +24,33 @@
 
 package test;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-public class SomeTest extends Base {
+public class BarTest
+{
+  @Test
+  public void test1() {
+    Assert.assertTrue(true);
+  }
 
-    @Test public void test1() {
-        run();
-    }
+  @Test
+  public void test2() {
+    Assert.assertTrue(true);
+  }
 
-    @Test public void test2() {
-        run();
-    }
+  @Test
+  public void test3() {
+    Assert.assertTrue(true);
+  }
 
-    @Test public void test3() {
-        run();
-    }
+  @Test
+  public void test4() {
+    Assert.assertTrue(true);
+  }
 
-    @Test public void test4() {
-        run();
-    }
-
-    @Test public void test5() {
-        run();
-    }
-
-    @Test public void test6() {
-        run();
-    }
-
+  @Test
+  public void test5() {
+    Assert.assertTrue(true);
+  }
 }
